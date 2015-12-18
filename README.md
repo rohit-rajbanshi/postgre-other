@@ -10,26 +10,33 @@ The example contains Rest controller to call database and Redis services.  The s
 ##Project structure
 
    ``` 
-   com/ge/predix/labs/data/jpa/
-      Application.java
-   com/ge/predix/labs/data/jpa/config
-      CloudFoundryDataSourceConfiguration.java
-      ServicesConfiguration.java
-   com/ge/predix/labs/data/jpa/domain
-      Customer.java
-   com/ge/predix/labs/data/jpa/service
-      CustomerService.java
-   com/ge/predix/labs/data/jpa/web
-      CustomerApiController.java
-      CacheController.java
-      
-    src/main/resources
-       initialCustomers.sql
-      
-README.md
-manifest.yml
-pom.xml
-
+├── LICENSE.md
+├── README.md
+├── manifest.yml
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── com
+    │   │       └── ge
+    │   │           └── predix
+    │   │               └── labs
+    │   │                   └── data
+    │   │                       └── jpa
+    │   │                           ├── Application.java
+    │   │                           ├── config
+    │   │                           │   ├── CloudFoundryDataSourceConfiguration.java
+    │   │                           │   └── ServicesConfiguration.java
+    │   │                           ├── domain
+    │   │                           │   └── Customer.java
+    │   │                           ├── service
+    │   │                           │   └── CustomerService.java
+    │   │                           └── web
+    │   │                               ├── CacheController.java
+    │   │                               └── CustomerApiController.java
+    │   └── resources
+    │       └── initialCustomers.sql
+    └── test
    ``` 
 #### CloudFoundryDataSourceConfiguration.java:
  -  extends AbstractCloudConfig class to get the ConnectionFactory object associated with the bound services Postgress and Redis
