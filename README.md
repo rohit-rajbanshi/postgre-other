@@ -141,8 +141,9 @@ public class ServicesConfiguration {
     
   ```
 ## Use a browser to test app's REST: 
-   ```  
+
  [http://predix-jpa-sv.run.aws-usw02-pr.ice.predix.io/customers] (http://predix-jpa-sv.run.aws-usw02-pr.ice.predix.io/customers)
+   ```  
  returns json list of customer from resources/initialCustomers.sql
  [{"id":785001,"name":"Sam","phone":"(925)-123-4567","tstamp":1447719635998},
  {"id":785002,"name":"Sergey","phone":"(925)-223-4567","tstamp":1447719636007},
@@ -162,13 +163,15 @@ public class ServicesConfiguration {
  http://predix-jpa-sv.run.aws-usw02-pr.ice.predix.io/customers/{id}
  returns customer by id number 
  {"id":785001,"name":"Sam","phone":"(925)-123-4567","tstamp":1447719635998}
- 
+    ```
  [http://predix-jpa-sv.run.aws-usw02-pr.ice.predix.io/search?q=J] (http://predix-jpa-sv.run.aws-usw02-pr.ice.predix.io/search?q=J)
+    ```
  returns all customers containing letter "J" 
  [{"id":785006,"name":"Josh","phone":"(925)-723-4567","tstamp":1447719636022},
  {"id":785011,"name":"Raj","phone":"(925)-033-4567","tstamp":1447719636034}]
- 
+    ```
  [http://predix-jpa-sv.run.aws-usw02-pr.ice.predix.io/cache] (http://predix-jpa-sv.run.aws-usw02-pr.ice.predix.io/cache)
+    ```
  returns 
  customers - Cache contains records: 
 
