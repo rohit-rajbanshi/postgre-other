@@ -1,8 +1,7 @@
 ---
 applications:
-  - name: predix_jpa_sv
+  - name: rohit_rajbanshi-predix_jpa_sv
     buildpack: java_buildpack
     path: target/predix-jpa-cf-1.0.0.jar
 services:
-    - postgres_sv
-    - redis_sv 
+    - rohit_rajbanshi-postgre-instance

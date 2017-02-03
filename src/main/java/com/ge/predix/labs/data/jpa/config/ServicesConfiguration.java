@@ -13,7 +13,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.ge.predix.labs.data.jpa.service.CustomerService;
 
 @Configuration
-@EnableCaching
 @EnableTransactionManagement
 @ComponentScan(basePackageClasses = {CustomerService.class})
 public class ServicesConfiguration {
